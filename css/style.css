@@ -1,0 +1,87 @@
+.game__wrapper {
+    display: grid;
+    position: relative;
+    padding: 0 5px 0 5px;
+    grid-template: repeat(4,150px) / repeat(4,150px);
+    gap: 5px;
+    justify-content: center;
+}
+.game__place {
+    border: 1px solid #000;
+    font-size: 48px;
+    text-align: center;
+    padding-top: 50px;
+    cursor: pointer;
+}
+.btn__refill {
+    display: block;
+    width: 130px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #000;
+    background-color: gray;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.game__step {
+    font-size: 20px;
+}
+.game__msg {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+@media (min-width: 320px) {
+    h1 {
+        text-align: center;
+    }
+    .btn__refill {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .game__step {
+        text-align: center;
+    }
+    .game__msg {
+        display: block;
+        width: 295px;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .game__wrapper {
+        grid-template: repeat(4, 70px) / repeat(4, 70px);
+    }
+    .game__place {
+        padding-top: calc(50% - 28px);
+    }
+}
+
+@media (min-width: 576px) {
+    h1 {
+        text-align: center;
+    }
+    .btn__refill {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .game__step, .game__msg {
+        padding-left: 5px;
+    }
+    .game__wrapper {
+        grid-template: repeat(4, 100px) / repeat(4, 100px);
+    }
+    .game__place {
+        padding-top: calc(50% - 28px);
+    }
+}
+
+@media (min-width: 576px) {
+    .game__wrapper {
+        grid-template: repeat(4, 150px) / repeat(4, 150px);
+    }
+    .game__place {
+        padding-top: calc(50% - 28px);
+    }
+}
